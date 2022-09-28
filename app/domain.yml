@@ -1,0 +1,48 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - permit
+  - new_permit
+  - renew_permit
+  - give_time
+
+actions:
+- action_show_time
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you? How can I help you?"
+
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+  utter_renew_permit:
+    - text : Please vist the link for details https://foodwatch.dm.gov.ae/
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  utter_Permit:
+    - text: Please mention the type(New or Renewal)
+  utter_new_permit:
+     - text : Please vist the link for details https://foodwatch.dm.gov.ae/
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: false
